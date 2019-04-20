@@ -10,7 +10,10 @@
 | and give it the Closure to call when that URI is requested.
 |
 */
+include __DIR__.'/seguridad.php';
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+// $router->post('login','LoginController@login');
